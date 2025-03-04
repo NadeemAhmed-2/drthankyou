@@ -1,0 +1,123 @@
+.doctor-profile {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p strong {
+  width: 150px;
+  color: #34495e;
+  flex-shrink: 0;
+}
+
+input, textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.pbtn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9;
+}
+
+.btn-save {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 468px) {
+  p {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  p strong {
+    margin-bottom: 5px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  .doctor-profile {
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 288px;
+    max-height:900px;
+  }
+  .d-p2{
+   min-height:900px
+  }
+.book-button{
+  margin-bottom:15vh
+}
+  h2 {
+    font-size: 18px;
+  }
+  .doctor-image-container .si{
+       max-width:100px;
+       max-height:100px;
+  }
+  .doctor-profile{
+    margin-top:0;
+  }
+  .btn-edit{
+    position: absolute;
+    bottom:-200px;
+    width: 70%;
+    left:30px;
+  }
+  .edit{
+    min-height:1280px
+  }
+}

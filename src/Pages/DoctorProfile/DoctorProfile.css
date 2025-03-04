@@ -1,0 +1,178 @@
+/* Base styles */
+.doctor-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-booking-box {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+/* Doctor Profile Section */
+.doctor-profile {
+  flex: 1;
+  text-align: center;
+}
+
+.doctor-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.verified {
+  color: green;
+  font-size: 20px;
+}
+
+.about {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Booking Section */
+.booking-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.date-picker {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.book-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.book-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-booking-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .date-picker {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .book-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-booking-box {
+    padding: 15px;
+   
+  }
+
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .date-picker {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .book-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-booking-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Reduce gap between sections */
+    padding: 15px;
+  }
+
+  .doctor-profile {
+    margin-bottom: 10px; /* Reduce spacing below profile */
+  }
+
+  .booking-section {
+    margin-top: 0; /* Remove unnecessary top margin */
+  }
+
+  .doctor-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .date-picker {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .book-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-booking-box {
+    padding: 10px;
+    gap: 5px; /* Reduce gap further for smaller screens */
+  }
+
+  .doctor-profile {
+    margin-bottom: 5px;
+  }
+
+  .booking-section {
+    margin-top: 0;
+  }
+
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+  }
+}

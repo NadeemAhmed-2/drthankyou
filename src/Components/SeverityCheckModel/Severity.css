@@ -1,0 +1,206 @@
+/* General Page Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Form Container */
+.container {
+  width: 90%;
+  min-width: 900px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #304ffe, #512da8);
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+/* Form Elements */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #444;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* Chronic & Previous Symptoms - Side by Side */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+}
+.main-div{
+  min-width:500px;
+}
+
+.flex-container .input-group {
+  flex: 1;
+}
+
+/* Severity Badge */
+.severity-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px 0 15px;
+  text-align: center;
+}
+
+.normal { background: #dcedc8; color: #33691e; }
+.moderate { background: #ffecb3; color: #ff6f00; }
+.high { background: #ffcdd2; color: #d32f2f; }
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #304ffe, #512da8);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #1e40af, #311b92);
+}
+
+/* Gemini Response Box */
+.response-box {
+  /* border: 1px solid #ccc; */
+  padding: 15px;
+  /* border-radius: 10px; */
+  background-color: #f9f9f9;
+  height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+  font-family: monospace;
+  margin-top: 15px;
+}
+
+.medical-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.medical-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.medical-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.medical-form-container label {
+  font-weight: bold;
+}
+
+.medical-form-container input,
+.medical-form-container select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.medical-form-container .btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  min-width:100%
+}
+
+.medical-form-container .btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.medical-form-container .severity {
+  font-weight: bold;
+}
+
+.medical-form-container .response-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+  background-color: #f0f0f0;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+@media (max-width:500px) {
+  .main-div{
+    min-width:300px;
+  
+  }
+  .sym input{
+    width: 92%;
+  }
+}

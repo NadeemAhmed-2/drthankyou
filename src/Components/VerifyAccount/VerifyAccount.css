@@ -1,0 +1,10 @@
+.user-upload-form{
+  width:100%;
+  margin-left: 0vw;
+}
+@media (max-width:600px) {
+  .user-upload-form{
+    width:70%;
+    margin-left: 10vw;
+  }
+}

@@ -1,0 +1,170 @@
+/* Profile Page Styling */
+.profile-container {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  /* background-color: #f1f1f1; */
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.profile-details p {
+  font-size: 16px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.profile-details strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.profile-details input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.profile-details input:focus {
+  border-color: #007BFF;
+  outline: none;
+  background-color: #fff;
+}
+
+.edit-save-container {
+  margin-top: 20px;
+}
+
+.edit-button, .save-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-button:hover, .save-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.edit-button:focus, .save-button:focus {
+  outline: none;
+}
+
+.logout-container {
+  margin-top: 20px;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.logout-button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .profile-header h2 {
+    font-size: 24px;
+  }
+
+  .profile-details p {
+    font-size: 14px;
+  }
+
+  .profile-details input {
+    font-size: 14px;
+    width:90%
+  }
+
+  .edit-button, .save-button, .logout-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .profile-header h2 {
+    font-size: 20px;
+  }
+
+  .profile-details p {
+    font-size: 12px;
+  }
+
+  .profile-details input {
+    font-size: 12px;
+  }
+
+  .edit-button, .save-button, .logout-button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .profile-container{
+    margin-top:-120px;
+    min-width: 300px;
+  }
+}
